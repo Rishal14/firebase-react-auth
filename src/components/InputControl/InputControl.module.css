@@ -19,9 +19,9 @@
   }
   
   .container input:hover {
-    border-color: #ccc;
+    border-color: #cf1919;
   }
   
   .container input:focus {
-    border-color: #9900ff;
+    border-color: #1fc9c9;
   }
