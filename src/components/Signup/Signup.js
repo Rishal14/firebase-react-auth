@@ -67,7 +67,7 @@ function Signup() {
           }
         />
 
-        <div className={styles.footer}>
+<div className={styles.footer}>
           <b className={styles.error}>{errorMsg}</b>
           <button onClick={handleSubmission} disabled={submitButtonDisabled}>
             Signup
