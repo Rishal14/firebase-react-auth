@@ -35,30 +35,76 @@
   }
   
   .footer button {
-    outline: none;
-    border: none;
-    background-color: #4ed587;
-    color: #fff;
-    border-radius: 5px;
+    position: relative;
+    font-size: 18px;
     font-weight: bold;
-    font-size: 1rem;
-    padding: 10px 16px;
-    width: 100%;
-    transition: 100ms;
-    cursor: pointer;
+    height: 45px;
+    padding: 10px 20px;
+    background: rgb(203, 152, 152);
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid;
+    color: #334b79;
+    z-index: 1;
+    transition: 0.5s all ease;
   }
-  
-  .footer button:disabled {
-    background-color: gray !important;
-  }
-  
+
   .footer button:hover {
-    background-color: #589f64;
+    color: rgb(17, 4, 4);
+    cursor: pointer;
+    border: 0px;
+  }
+
+  .footer button:active {
+    transform: scale(0.85);
+  }
+
+  .footer button:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: -50%;
+    top: -100%;
+    background: #54B435;
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+
+  .footer button:hover:before {
+    top: 0;
+    left: 0;
+    border: 0px;
+    transform: rotate(180deg);
+  }
+
+  .footer button:after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    top: 100%;
+    background: #54B435;
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+
+  .footer button:hover:after {
+    top: 0;
+    left: 50%;
+    border: 0px;
+    transform: rotate(180deg);
   }
   
   .footer p {
     font-weight: 700;
-    color: #000;
+    color: #0b0202;
+    mix-blend-mode: multiply;
   }
   
   .footer p span a {
