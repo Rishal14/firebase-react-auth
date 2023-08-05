@@ -6,7 +6,7 @@ function Home(props) {
     <div>
       <div>
         <h1>
-          <Link to="/login">Login</Link>
+          <Link to="/login">Logout</Link>
         </h1>
         <br />
         <h1>
